@@ -1,9 +1,9 @@
 ---
-title: Blank
+title: Template extension
 parent: Extensions
 layout: default
-nav_order: 1
-# nav_exclude: true
+nav_order: 99
+nav_exclude: true
 ---
 
 # SKG-IF extension template
