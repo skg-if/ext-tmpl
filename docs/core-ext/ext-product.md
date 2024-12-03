@@ -2,9 +2,18 @@
 title: Research product
 parent: Core extensions
 layout: default
-# nav_exclude: true
+# nav_order: 1
 ---
 
 # Research product
 
-Here below, write the new properties that the extension adds to the [core Research product](https://skg-if.github.io/interoperability-framework/docs/research-product.html).
+Here below, write the new properties and relations that the extension adds to the [core Research product](https://skg-if.github.io/interoperability-framework/docs/research-product.html).
+
+## Properties
+
+### `new_attribute`
+*Type* (optional|recommended|mandatory): attribute description.
+
+```json
+    "new_attribute": ...
+```
