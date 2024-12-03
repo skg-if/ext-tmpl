@@ -2,7 +2,7 @@
 title: Template extension
 parent: Extensions
 layout: default
-# nav_exclude: true
+nav_exclude: true
 ---
 
 # SKG-IF extension documentation
