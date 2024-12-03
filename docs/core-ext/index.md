@@ -2,6 +2,7 @@
 title: Core extensions
 parent: Template extension
 layout: default
+nav_order: 1
 # nav_exclude: true
 ---
 

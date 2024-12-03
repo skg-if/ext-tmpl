@@ -9,6 +9,4 @@ layout: default
 
 This is a template of an SKG-IF extension.
 Use this as an home page to describe the overall purpose of the extension. 
-In order to document the rest, please use the suggested structure under the `docs/` folder:
-
-- []
+In order to document the rest, please use the suggested folder structure.
