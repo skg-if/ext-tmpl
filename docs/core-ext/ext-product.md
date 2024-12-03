@@ -11,9 +11,9 @@ Here below, write the new properties and relations that the extension adds to th
 
 ## Properties
 
-### `new_attribute`
+### `ext:new_attribute`
 *Type* (optional|recommended|mandatory): attribute description.
 
 ```json
-    "new_attribute": ...
+    "ext:new_attribute": "value"
 ```

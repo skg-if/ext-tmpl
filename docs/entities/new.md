@@ -11,9 +11,9 @@ Describe here the properties and relations of the entity introduced by this exte
 
 ## Properties
 
-### `my_attribute`
+### `ext:my_attribute`
 *Type* (optional|recommended|mandatory): attribute description.
 
 ```json
-    "my_attribute": "value"
+    "ext:my_attribute": "value"
 ```
