@@ -9,6 +9,9 @@ nav_order: 1
 # Core extensions
 
 Please list here the core entities that your extension affects.
-For the sake of this example, we imagined to add fictional properties to [Research products](https://skg-if.github.io/interoperability-framework/docs/research-product.html).
+For the sake of this example, we imagined to add fictional properties to the core [Research product].
 
-**Attention!** To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining new properties for core entities.
+**Attention!** To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining new properties and relations for core entities.
+
+----
+[Research product]: {% link interoperability-framework/docs/research-product.md %}
