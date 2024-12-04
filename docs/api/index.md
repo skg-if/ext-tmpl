@@ -16,7 +16,8 @@ Additionally, you are free to specify additional methods with customised behavio
 ## `GET https://my.skg.io/resolve/<schema>:<id>`
 
 ### `ext:my_param`
-Description: this paramenter is intended to...
+Description: this parameter is intended to...
+
 Usage: 
 - `ext:my_param=true`: some behavior.
 - `ext:my_param=false`: another behavior.
@@ -25,7 +26,8 @@ Usage:
 ## `POST https://my.skg.io/resolve/<schema>:<id>`
 
 ### `ext:another_param`
-Description: this paramenter is intended to...
+Description: this parameter is intended to...
+
 Usage: 
 - `ext:another_param=true`: some other behavior.
 - `ext:another_param=false`: yet another behavior.
