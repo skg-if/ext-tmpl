@@ -14,6 +14,7 @@ In order to document the specification introduced by your extension, please use 
 In particular, the document you have to produce has to cover these fundamental aspects:
 - extensions to core entities (properties and relations)
 - introduction of new entities (properties and relations)
+- description of the data model and formal implementation
 - production of an extended JSON-LD context
 - production of JSON-LD examples
 - customisations of core API resolvers (if any)
