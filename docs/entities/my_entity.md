@@ -42,10 +42,10 @@ The current version of SKG-IF includes the following types of identifiers (to be
 ```
 
 ### `entity_type`
-*String* (mandatory): Field stating what kind of entity is being serialised. Needed for parsing purposes; fixed to `ext:my_entity`. Please notice that you need to preped the assigned `ext:` prefix to your type in order to prevent possible clashes with other extensions.
+*String* (mandatory): Field stating what kind of entity is being serialised. Needed for parsing purposes; fixed to `ext:my_entity`. Please notice that you need to preped the assigned `ext_` prefix to your type in order to prevent possible clashes with other extensions.
 
 ```json
-    "entity_type": "ext:my_entity"
+    "entity_type": "ext_my_entity"
 ```
 
 ### `my_attribute`

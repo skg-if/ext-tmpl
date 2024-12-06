@@ -16,19 +16,19 @@ To prevent possible clashes with other extensions, each extension is assigned a 
 
 ## `GET https://my.skg.io/resolve/<schema>:<id>`
 
-### `ext:my_param`
-Description: this parameter is intended to...
+### `ext_my_param`
+Description: this parameter is intended to ...
 
 Usage: 
-- `ext:my_param=true`: some behavior.
-- `ext:my_param=false`: another behavior.
+- `ext_my_param=true`: some behavior.
+- `ext_my_param=false`: another behavior.
 
 
 ## `POST https://my.skg.io/resolve/<schema>:<id>`
 
-### `ext:another_param`
-Description: this parameter is intended to...
+### `ext_another_param`
+Description: this parameter is intended to ...
 
 Usage: 
-- `ext:another_param=true`: some other behavior.
-- `ext:another_param=false`: yet another behavior.
+- `ext_another_param=true`: some other behavior.
+- `ext_another_param=false`: yet another behavior.

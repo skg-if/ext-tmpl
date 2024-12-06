@@ -13,11 +13,11 @@ Here below, describe the new properties and relations that the extension adds to
 
 ## Properties
 
-### `ext:new_attribute`
+### `ext_new_attribute`
 *Type* (optional|recommended|mandatory): attribute description.
 
 ```json
-    "ext:new_attribute": "value"
+    "ext_new_attribute": "value"
 ```
 
 ----
