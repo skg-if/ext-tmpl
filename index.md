@@ -19,4 +19,6 @@ In particular, the document you have to produce has to cover these fundamental a
 - customisations of core API resolvers (if any)
 - introduction of custom API methods (if any)
 
-**Attention!** The documentation must be written in [Markdown](https://www.markdownguide.org) and will be compiled automatically using [Jekyll](https://jekyllrb.com) against the [Just the Docs](https://just-the-docs.com) theme. Once compiled successully it will be deployed on GitHub Pages. Please follow the indications and the examples provided and feel free to customise it as long as it complies with the overall workflow.
+
+{: .important }
+The documentation must be written in [Markdown](https://www.markdownguide.org) and will be compiled automatically using [Jekyll](https://jekyllrb.com) against the [Just the Docs](https://just-the-docs.com) theme. Once compiled successully it will be deployed on GitHub Pages. Please follow the indications and the examples provided and feel free to customise it as long as it complies with the overall workflow.
