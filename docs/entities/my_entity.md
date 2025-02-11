@@ -3,6 +3,7 @@ title: My entity
 parent: Extension entities
 layout: default
 # nav_order: 1
+search_exclude: true
 ---
 
 # My entity

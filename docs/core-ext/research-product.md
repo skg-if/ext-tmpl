@@ -3,6 +3,7 @@ title: Research product
 parent: Core extensions
 layout: default
 # nav_order: 1
+search_exclude: true
 ---
 
 # Research product

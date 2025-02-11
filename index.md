@@ -2,6 +2,7 @@
 title: Template extension
 layout: default
 nav_exclude: true
+search_exclude: true
 ---
 
 # SKG-IF extension documentation
