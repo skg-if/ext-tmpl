@@ -1,5 +1,5 @@
 ---
-title: Template extension
+title: Extension template
 layout: default
 nav_exclude: true
 search_exclude: true
