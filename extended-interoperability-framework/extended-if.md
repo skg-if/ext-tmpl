@@ -6,7 +6,7 @@ nav_order: 1
 # nav_exclude: true
 has_toc: false
 ---
-# Extended interoperabilty framework
+# Extended interoperability framework
 
 {: .important }
 To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining new properties and relations for core entities.
