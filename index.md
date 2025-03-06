@@ -5,7 +5,7 @@ nav_exclude: true
 search_exclude: true
 ---
 
-# SKG-IF extension documentation
+# Extension template documentation
 
 This is a documentation template created to document an SKG-IF extension.
 Use this as a home page to describe the overall purpose of the extension.
@@ -23,4 +23,4 @@ In particular, the document you have to produce has to cover these fundamental a
 
 
 {: .important }
-The documentation must be written in [Markdown](https://www.markdownguide.org) and will be compiled automatically using [Jekyll](https://jekyllrb.com) against the [Just the Docs](https://just-the-docs.com) theme. Once compiled successfully it will be deployed on GitHub Pages. Please follow the indications and the examples provided and feel free to customise it as long as it complies with the overall workflow.
+The documentation must be written in [Markdown](https://www.markdownguide.org) and will be compiled automatically using [Jekyll](https://jekyllrb.com) against the [Just the Docs](https://just-the-docs.com) theme. Each time you `git push`, a GitHub action will wake up and take care of it. Once compiled successfully your documentation will be deployed on GitHub Pages on the SKG-IF website, despite being hidden. Please follow the indications and the examples provided and feel free to customise it as long as it complies with the overall workflow.
