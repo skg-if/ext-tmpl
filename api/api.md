@@ -24,7 +24,7 @@ Usage:
 - `ext_my_param=false`: another behavior.
 
 
-## `POST https://my.skg.io/resolve/<schema>:<id>`
+## `POST https://my.skg.io/resolve`
 
 ### `ext_another_param`
 Description: this parameter is intended to ...
@@ -32,3 +32,7 @@ Description: this parameter is intended to ...
 Usage: 
 - `ext_another_param=true`: some other behavior.
 - `ext_another_param=false`: yet another behavior.
+
+
+## `GET https://my.skg.io/ext_new_method`
+Description: this new endoint ... 
