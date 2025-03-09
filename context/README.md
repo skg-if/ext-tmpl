@@ -2,9 +2,10 @@
 
 This repository contains the JSON-LD context for SKG-IF extension. 
 
-The directory `ver` contains all the versions of the JSON-LD context developed (and related samples within), to track the evolution of the context in time. This directory:
+The directory `ver` contains all the versions of the JSON-LD context developed, to track the evolution of the context in time. This directory:
 
 * must contain a directory for each version of the context developed, named using the [semantic versioning system](https://semver.org/) of the version of the context (`1.0.0`, `1.1.3`, `2.5.1`, etc.); 
+
 * must contain the directory `current` that contains the last available version of the context;
 
 * all JSON-LD files defining the context (despite the version considered) must be named `skg-if.json`.
