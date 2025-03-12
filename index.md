@@ -1,5 +1,6 @@
 ---
 title: Extension template
+parent: Extensions
 layout: default
 nav_exclude: false
 search_exclude: true
