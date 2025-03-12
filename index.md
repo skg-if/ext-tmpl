@@ -1,7 +1,7 @@
 ---
 title: Extension template
 layout: default
-nav_exclude: true
+nav_exclude: false
 search_exclude: true
 ---
 
