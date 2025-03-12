@@ -11,7 +11,7 @@ search_exclude: true
 {: .important }
 The documentation must be written in [Markdown](https://www.markdownguide.org) and will be compiled automatically using [Jekyll](https://jekyllrb.com) against the [Just the Docs](https://just-the-docs.com) theme. Each time you `git push`, a GitHub action will wake up and take care of it. Once compiled successfully your documentation will be deployed on GitHub Pages on the SKG-IF website, despite being hidden. Please follow the indications and the examples provided and feel free to customise it as long as it complies with the overall workflow.
 
-{: .important }
+{: .highlight }
 This page serves to kickstart the development of your extension. Once confident with the whole process, please delete the present content and replace it with an introductory description of the extension, comprehending its context, scope and objectives.
 
 ## Guidelines
