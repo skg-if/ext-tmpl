@@ -56,4 +56,4 @@ The current version of SKG-IF includes the following types of identifiers (to be
 ```
 
 ----
-[New entity]: {% link extension-template/extended-interoperability-framework/extension-entities/ext-new-entity.md %}
+[New entity]: {% link extension-template/interoperability-framework/extension-entities/ext-new-entity.md %}

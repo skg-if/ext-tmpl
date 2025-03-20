@@ -21,6 +21,6 @@ This extension introduces a [New entity].
 
 
 ----
-[Extended research product]: {% link extension-template/extended-interoperability-framework/core-extensions/extended-research-product.md %}
-[New entity]: {% link extension-template/extended-interoperability-framework/extension-entities/ext-new-entity.md %}
+[Extended research product]: {% link extension-template/interoperability-framework/core-extensions/ext-research-product.md %}
+[New entity]: {% link extension-template/interoperability-framework/extension-entities/ext-new-entity.md %}
 [Research product]: {% link interoperability-framework/docs/research-product.md %}
