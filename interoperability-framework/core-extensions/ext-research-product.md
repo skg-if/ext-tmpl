@@ -1,11 +1,12 @@
 ---
 title: Research product
-parent: Extended interoperability framework
+parent: Interoperability framework
+ancestor: Extension template
 layout: default
 nav_order: 2
 ---
 
-# (Extended) Research product
+# (Ext) Research product
 
 By default, this extended core entity inherits all the properties defined in the core [Research product].
 Here below, please describe the new properties and relations that the extension adds to the default [Research product].

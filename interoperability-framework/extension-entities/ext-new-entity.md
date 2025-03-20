@@ -1,11 +1,12 @@
 ---
 title: New entity
-parent: Extended interoperability framework
+parent: Interoperability framework
+ancestor: Extension template
 layout: default
 nav_order: 3
 ---
 
-# New entity
+# (Ext) New entity
 
 Describe here the properties and relations of [New entity] introduced by this extension.
 Like any other entity in the SKG-IF, [New entity] has to have some basic mandatory fields for identification and for its type.

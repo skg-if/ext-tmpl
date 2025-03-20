@@ -1,5 +1,5 @@
 ---
-title: Extended interoperability framework
+title: Interoperability framework
 parent: Extension template
 layout: default
 nav_order: 1
