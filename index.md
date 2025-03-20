@@ -16,14 +16,12 @@ This page serves to kickstart the development of your extension and provide guid
 ## Documentation checklist
 In order to document the specification introduced by your extension, please use the suggested folder structure.
 In particular, the document you have to produce has to cover these fundamental aspects:
-[RA-SKG extension of the SKG-IF Interoperability Framework](/ext-ra-skg/extended-interoperability-framework/)
-- description of the [data model](/extension-template/data-model/) and formal implementation
-- production of an extended JSON-LD context
-- documentation of extensions to core entities (properties and relations)
-- documentation of introduction of new entities (properties and relations)
-- production of JSON-LD examples
-- customisations of core API resolvers (if any)
-- introduction of custom API methods (if any)
+- description of the [data model](/extension-template/data-model/) and formal implementation;
+- production of an extended [JSON-LD context](/extension-template/context/);
+- description of [extensions to core entities](/extension-template/interoperability-framework/core-extensions/ext-research-product.md) (properties and relations);
+- description of [new entities](/extension-template/interoperability-framework/extension-entities/ext-entity.md) (properties and relations);
+- [extension](/extension-template/api) to the core APIs; i.e., customisations of core API resolvers (if any) and/or introduction of custom API methods (if any);
+- production of [JSON-LD examples](https://github.com/skg-if/extension-template/tree/main/examples).
 
 
 ## Repository structure

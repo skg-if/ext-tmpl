@@ -1,21 +1,21 @@
 ---
-title: New entity
+title: Entity
 parent: Interoperability framework
 ancestor: Extension template
 layout: default
 nav_order: 3
 ---
 
-# (Ext) New entity
+# (Ext) Entity
 
-Describe here the properties and relations of [New entity] introduced by this extension.
-Like any other entity in the SKG-IF, [New entity] has to have some basic mandatory fields for identification and for its type.
+Describe here the properties and relations of [Entity] introduced by this extension.
+Like any other entity in the SKG-IF, [Entity] has to have some basic mandatory fields for identification and for its type.
 
 
 ## Properties
 
 ### `local_identifier`
-*String* (mandatory): Unique code identifying the [New entity] in the SKG (if any, otherwise "stateless identifier").
+*String* (mandatory): Unique code identifying the [Entity] in the SKG (if any, otherwise "stateless identifier").
 
 **Suggestion:** Use a URL as a string to make this entity dereferenceable on the Web. For additional information, see the [section 'Local identifiers of entities' of the Interoperability Framework](/interoperability-framework/#local-identifiers-of-entities).
 
@@ -57,4 +57,4 @@ The current version of SKG-IF includes the following types of identifiers (to be
 ```
 
 ----
-[New entity]: {% link extension-template/interoperability-framework/extension-entities/ext-new-entity.md %}
+[Entity]: {% link extension-template/interoperability-framework/extension-entities/ext-entity.md %}
