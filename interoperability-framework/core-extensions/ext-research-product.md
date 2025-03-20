@@ -15,7 +15,7 @@ Here below, please describe the new properties and relations that the extension 
 ## Properties
 
 ### `ext_new_attribute`
-*Type* (optional|recommended|mandatory): attribute description.
+*Type* (optional | recommended | mandatory): attribute description.
 
 ```json
     "ext_new_attribute": "value"

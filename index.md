@@ -16,7 +16,8 @@ This page serves to kickstart the development of your extension and provide guid
 ## Documentation checklist
 In order to document the specification introduced by your extension, please use the suggested folder structure.
 In particular, the document you have to produce has to cover these fundamental aspects:
-- description of the data model and formal implementation
+[RA-SKG extension of the SKG-IF Interoperability Framework](/ext-ra-skg/extended-interoperability-framework/)
+- description of the [data model](/extension-template/data-model/) and formal implementation
 - production of an extended JSON-LD context
 - documentation of extensions to core entities (properties and relations)
 - documentation of introduction of new entities (properties and relations)
