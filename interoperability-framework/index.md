@@ -3,8 +3,8 @@ title: Interoperability framework
 parent: Extension template
 layout: default
 nav_order: 1
-# nav_exclude: true
 has_toc: false
+search_exclude: true
 ---
 # (Ext) Interoperability framework
 

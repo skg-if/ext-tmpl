@@ -4,6 +4,7 @@ parent: Interoperability framework
 ancestor: Extension template
 layout: default
 nav_order: 2
+search_exclude: true
 ---
 
 # (Ext) Research product

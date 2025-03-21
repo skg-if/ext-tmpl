@@ -4,6 +4,7 @@ parent: Interoperability framework
 ancestor: Extension template
 layout: default
 nav_order: 3
+search_exclude: true
 ---
 
 # (Ext) Entity
