@@ -17,11 +17,11 @@ This page serves to kickstart the development of your extension and provide guid
 In order to document the specification introduced by your extension, please use the suggested folder structure.
 In particular, the document you have to produce has to cover these fundamental aspects:
 - description of the [data model](/extension-template/data-model/) and formal implementation;
-- production of an extended [JSON-LD context](https://github.com/skg-if/extension-template/tree/main/context);
+- production and documentation of an extended [JSON-LD context](/extension-template/context/);
 - description of [extensions to core entities]({% link extension-template/interoperability-framework/core-extensions/ext-research-product.md %}) (properties and relations);
 - description of [new entities]({% link extension-template/interoperability-framework/extension-entities/ext-entity.md %}) (properties and relations);
 - [extension](/extension-template/api) to the core APIs; i.e., customisations of core API resolvers (if any) and/or introduction of custom API methods (if any);
-- production of [JSON-LD examples](https://github.com/skg-if/extension-template/tree/main/examples).
+- production of [JSON-LD examples](/extension-template/examples/).
 
 
 ## Repository structure
