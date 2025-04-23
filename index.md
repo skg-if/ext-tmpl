@@ -14,7 +14,7 @@ This page serves to kickstart the development of your extension and provide guid
 ## Documentation checklist
 In order to document the specification introduced by your extension, please use the suggested folder structure.
 In particular, the document you have to produce has to cover these fundamental aspects:
-- description of the [data model](/extension-template/data-model/) and formal implementation in OWL;
+- description of the [data model](/extension-template/data-model/) and formal implementation in OWL + SHACL;
 - production and documentation of an extended [JSON-LD context](/extension-template/context/);
 - description of [extensions to core entities]({% link extension-template/interoperability-framework/core-extensions/ext-research-product.md %}) (properties and relations);
 - description of [new entities]({% link extension-template/interoperability-framework/extension-entities/ext-entity.md %}) (properties and relations);
