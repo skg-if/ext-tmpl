@@ -1,8 +1,8 @@
 ---
 title: Extension template
 layout: default
-nav_exclude: true
-search_exclude: true
+# nav_exclude: true
+# search_exclude: true
 ---
 
 # Extension template documentation
