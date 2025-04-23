@@ -4,7 +4,7 @@ parent: Extension template
 layout: default
 nav_order: 1
 has_toc: false
-search_exclude: true
+nav_exclude: true
 ---
 # (Ext) Interoperability framework
 

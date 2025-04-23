@@ -3,7 +3,7 @@ title: API extensions
 parent: Extension template
 layout: default
 nav_order: 5
-search_exclude: true
+nav_exclude: true
 ---
 
 # API extensions
