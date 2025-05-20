@@ -12,7 +12,7 @@ While most of the structure is in general non-prescriptive, some parts (e.g., ve
 Please review the following to learn how to structure information in your repository.
 
 {: .highlight }
-Provided that your extension acronym of choice is `abc`, your repository will be named `ext-abc` to conveniently locate extension repositories under the SKG-IF organisation on GitHub. For example, the repository [`ext-ra-skg`](https://github.com/skg-if/ext-ra-skg) is the repository name of the extension `RA-SKG`.
+Provided that your extension acronym of choice is `abc`, your repository will be named `ext-abc` to conveniently locate extension repositories under the [SKG-IF organisation](https://github.com/orgs/skg-if/repositories) on GitHub. For example, the repository [`ext-ra-skg`](https://github.com/skg-if/ext-ra-skg) is the repository name of the extension `RA-SKG`.
 
 
 ## The `data-model` folder
