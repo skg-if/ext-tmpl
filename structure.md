@@ -84,10 +84,10 @@ This folder contains most of the documentation pages describing how your extensi
 To provide some structure, the repository contains two subfolders for the aforementioned purposes.
 
 
-## The `examples` folder
-This folder contains JSON-LD examples of real or mock data compliant to the specification of your extension.
-
-
 ## The `api` folder
 This folder contains the documentation pages relative to the api customisation that your extension intends to introduce.
 For the starter, one file is provided, but nothing prevents you from structuring the pages in a more articulated manner.
+
+
+## The `examples` folder
+This folder contains JSON-LD examples of real or mock data compliant to the specification of your extension.
