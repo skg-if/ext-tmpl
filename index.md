@@ -21,6 +21,6 @@ In particular, the document you have to produce has to cover these fundamental a
 - Production of the extension [data model](/extension-template/data-model/) and formal implementation in OWL;
 - Production of the [SHACL](/extension-template/data-model/shacl/) file;
 - Production of the [JSON-LD context](/extension-template/context/) for the extension;
-- Description of the [extended Interoperability Framework]({% link extension-template/interoperability-framework/index.md %}) (properties and relations of core and new entities);
+- Description of the [extended Interoperability Framework]({% link extension-template/extended-interoperability-framework/index.md %}) (properties and relations of core and new entities);
 - [Extension](/extension-template/api/) of the core Open API specs; i.e., customisations of core API resolvers (if any) and/or introduction of custom API methods (if any);
 - Production of [JSON-LD examples](/extension-template/examples/).
