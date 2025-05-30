@@ -13,7 +13,7 @@ To prevent possible clashes with other extensions, each extension is assigned a 
 
 ## Core extensions
 As an example, this template extends these core entities:
-- [Extended research product] extends the core [Research product].
+- [Extended research product] (extending the core [Research product]).
 
 
 ## Extension-specific entities
