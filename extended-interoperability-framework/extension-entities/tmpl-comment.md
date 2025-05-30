@@ -21,7 +21,7 @@ Like any other entity in the SKG-IF, [Comment] has to have some basic mandatory 
 **Suggestion:** Use a URL as a string to make this entity dereferenceable on the Web. For additional information, see the [section 'Local identifiers of entities' of the Interoperability Framework](/interoperability-framework/#local-identifiers-of-entities).
 
 ```json
-    "local_identifier": "https://w3id.org/oc/meta/ra/0614010840729"
+    "local_identifier": "https://..."
 ```
 
 ### `identifiers`
@@ -37,8 +37,8 @@ The current version of SKG-IF includes the following types of identifiers (to be
 ```json
     "identifiers": [
         {
-            "scheme": "orcid",
-            "value": "0000-0002-5193-7851"
+            "scheme": "...",
+            "value": "..."
         }           
     ]
 ```
