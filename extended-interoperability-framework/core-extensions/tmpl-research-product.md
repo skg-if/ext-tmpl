@@ -15,12 +15,13 @@ Here below, please describe the new properties and relations that the extension 
 
 ## Properties
 
-### `ext_new_attribute`
-*Type* (optional | recommended | mandatory): attribute description.
+### `tmpl_comments`
+*List* (optional): a list of [Comment] identifiers.
 
 ```json
-    "ext_new_attribute": "value"
+    "tmpl_comments": ["comment_1", "comment_2"]
 ```
 
 ----
 [Research product]: {% link interoperability-framework/docs/research-product.md %}
+[Comment]: {% link extension-template/extended-interoperability-framework/extension-entities/tmpl-comment.md %}
