@@ -32,12 +32,12 @@ An exemplar structure has been provided in the current template, containing the 
 * the current (i.e., last) version of the OWL ontology implementing the data model for an extension is available at the following URL pattern: 
 
   ```
-  https://w3id.org/skg-if/extension/<extension acronym>/ontology/<extension acronym>/
+  https://w3id.org/skg-if/extension/<extension acronym>/ontology/
   ```
 * the particular version of the ontology of implementing the data model of an extension, instead, can be accessed using a version number at the end of the the `w3id.org` URL, following this pattern:
   
   ```
-  https://w3id.org/skg-if/extension/<extension acronym>/ontology/<extension acronym>/<X.Y.Z>/
+  https://w3id.org/skg-if/extension/<extension acronym>/ontology/<X.Y.Z>/
   ```
 * the current (i.e., last) version of the SHACL document for validating the data model for an extension is available at the following URL pattern: 
 
@@ -50,9 +50,9 @@ An exemplar structure has been provided in the current template, containing the 
   https://w3id.org/skg-if/extension/<extension acronym>/validation/shacl/<X.Y.Z>/
   ```
 
-The `<extension acronym>` in the URLs above is the acronym of the extension as defined in the related SKG-IF GitHub repository assigned with the extension, without considering the prefix `ext-`. For instance, the current ontology for the [RA-SKG extension](https://github.com/skg-if/ext-ra-skg) is accessible at the URL [https://w3id.org/skg-if/extension/ra-skg/ontology/ra-skg/](https://w3id.org/skg-if/extension/ra-skg/ontology/ra-skg/).
+The `<extension acronym>` in the URLs above is the acronym of the extension as defined in the related SKG-IF GitHub repository assigned with the extension, without considering the prefix `ext-`. For instance, the current ontology for the [RA-SKG extension](https://github.com/skg-if/ext-ra-skg) is accessible at the URL [https://w3id.org/skg-if/extension/ra-skg/ontology/](https://w3id.org/skg-if/extension/ra-skg/ontology/).
 
-Instead, `<X.Y.Z>` in the URLs above identifies the version number of the particular context developed for the extension. For instance, the ontology having version `1.0.0` for the [RA-SKG extension](https://github.com/skg-if/ext-ra-skg) is accessible at the URL [https://w3id.org/skg-if/extension/ra-skg/ontology/ra-skg/1.0.0/](https://w3id.org/skg-if/extension/ra-skg/ontology/ra-skg/1.0.0/).
+Instead, `<X.Y.Z>` in the URLs above identifies the version number of the particular context developed for the extension. For instance, the ontology having version `1.0.0` for the [RA-SKG extension](https://github.com/skg-if/ext-ra-skg) is accessible at the URL [https://w3id.org/skg-if/extension/ra-skg/ontology/1.0.0/](https://w3id.org/skg-if/extension/ra-skg/ontology/1.0.0/).
 
 
 ## The `context` folder
