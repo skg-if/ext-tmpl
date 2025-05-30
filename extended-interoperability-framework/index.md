@@ -6,7 +6,7 @@ nav_order: 1
 has_toc: false
 nav_exclude: true
 ---
-# (Ext) Interoperability framework
+# (tmpl) Interoperability framework
 
 {: .important }
 To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining new properties and relations for core entities.
@@ -17,10 +17,10 @@ As an example, this template extends these core entities:
 
 
 ## Extension-specific entities
-This template introduces a brand-new [Entity].
+This template introduces a brand-new entity [Comment].
 
 
 ----
 [Extended research product]: {% link extension-template/extended-interoperability-framework/core-extensions/tmpl-research-product.md %}
-[Entity]: {% link extension-template/extended-interoperability-framework/extension-entities/tmpl-comment.md %}
+[Comment]: {% link extension-template/extended-interoperability-framework/extension-entities/tmpl-comment.md %}
 [Research product]: {% link interoperability-framework/docs/research-product.md %}
