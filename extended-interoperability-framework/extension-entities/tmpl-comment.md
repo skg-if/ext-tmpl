@@ -58,4 +58,4 @@ The current version of SKG-IF includes the following types of identifiers (to be
 ```
 
 ----
-[Comment]: {% link extension-template/extended-interoperability-framework/extension-entities/tmpl-comment.md %}
+[Comment]: {% link ext-tmpl/extended-interoperability-framework/extension-entities/tmpl-comment.md %}

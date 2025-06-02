@@ -24,4 +24,4 @@ Here below, please describe the new properties and relations that the extension 
 
 ----
 [Research product]: {% link interoperability-framework/docs/research-product.md %}
-[Comment]: {% link extension-template/extended-interoperability-framework/extension-entities/tmpl-comment.md %}
+[Comment]: {% link ext-tmpl/extended-interoperability-framework/extension-entities/tmpl-comment.md %}
