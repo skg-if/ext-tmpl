@@ -21,6 +21,6 @@ This template introduces a brand-new entity [Comment].
 
 
 ----
-[Extended research product]: {% link extension-template/extended-interoperability-framework/core-extensions/tmpl-research-product.md %}
-[Comment]: {% link extension-template/extended-interoperability-framework/extension-entities/tmpl-comment.md %}
+[Extended research product]: {% link ext-tmpl/extended-interoperability-framework/core-extensions/tmpl-research-product.md %}
+[Comment]: {% link ext-tmpl/extended-interoperability-framework/extension-entities/tmpl-comment.md %}
 [Research product]: {% link interoperability-framework/docs/research-product.md %}
