@@ -36,7 +36,7 @@ schema:comment a owl:ObjectProperty ;
     rdfs:isDefinedBy schema: .
 
 schema:Comment a owl:Class ;
-    rdfs:label "schema:Comment (SKG-IF labels: tmpl_scholarlyComment)" ;
+    rdfs:label "schema:Comment (SKG-IF labels: tmpl_comment)" ;
     dc:description """The properties that can be used with this class are:
 
 * dcterms:description -[0..1]-> rdfs:Literal""";
