@@ -9,7 +9,7 @@ nav_exclude: true
 # (tmpl) Interoperability framework
 
 {: .important }
-To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining new properties and relations for core entities.
+To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining new properties and relations for core entities. For this extension, the acronym is `tmpl`.
 
 ## Core extensions
 As an example, this template extends these core entities:
