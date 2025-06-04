@@ -17,7 +17,9 @@ In this modelling phase, two outcomes are expected
 - A **OWL/RDF ontology** in the format of choice, e.g., `.ttl`, `.nt`, `.xml`, `.json` (potentially all of them, provided they are aligned);
 - An `.html` **documentation page** of the developed ontology.
 
-These files need to be placed as indicated [here](../structure).
+These files need to be placed as indicated [here](../structure). In this way, everything will be automatically wired-up in order to deliver your assets behind W3IDs. For example:
+- This extension ontology, https://w3id.org/skg-if/extension/tmpl/ontology.ttl
+- This extension documentation, https://w3id.org/skg-if/extension/tmpl/ontology
 
 ## Methodological considerations
 A good Relation Database always start with requirements analysis and ER diagrams, rather than getting hands dirty with table schemas in the DBMS of reference.
