@@ -12,7 +12,7 @@ nav_exclude: true
 {: .important }
 To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining new properties and relations for core entities. For this extension, the acronym is `tmpl`.
 
-## Expected outcomes
+## Expected outcome
 In this extension development phase, the JSON-LD context is produced and placed as indicated in the repository structure [guidelines](../structure), in order to be served behind w3id.
 
 For example, the current (i.e., last) version of the JSON-LD context is available at [https://w3id.org/skg-if/extension/tmpl/context/skg-if.json](https://w3id.org/skg-if/extension/tmpl/context/skg-if.json).
