@@ -17,7 +17,8 @@ In this modelling phase, two outcomes are expected
 - A **OWL/RDF ontology** in the format of choice, e.g., `.ttl`, `.nt`, `.xml`, `.json` (potentially all of them, provided they are aligned);
 - An `.html` **documentation page** of the developed ontology.
 
-These files need to be placed as indicated [here](../structure). In this way, everything will be automatically wired-up in order to deliver your assets behind W3IDs. For example:
+These files need to be placed as indicated [here](../structure). In this way, everything will be automatically wired-up in order to deliver behind W3IDs all the assets developed within this extension . 
+For example:
 - This extension ontology, [https://w3id.org/skg-if/extension/tmpl/ontology.ttl](https://w3id.org/skg-if/extension/tmpl/ontology.ttl)
 - This extension documentation, [https://w3id.org/skg-if/extension/tmpl/ontology](https://w3id.org/skg-if/extension/tmpl/ontology)
 
@@ -33,7 +34,7 @@ More in-depth, advanced methodologies are available here:
 - [Peroni, S. (2015). *SAMOD: an agile methodology for the development of ontologies*. In Formal Ontology in Information Systems (FOIS) (pp. 37-50). IOS Press.](https://essepuntato.it/samod/)
 - [Gómez-Pérez, A., Fernández-López, M., & Corcho, O. (2004). *Ontological Engineering: With Examples from the Areas of Knowledge Management, E-commerce and the Semantic Web*. Springer.](https://link.springer.com/book/10.1007/b97353)
 
-In order to avoid reinventing the wheel, you are encouraged to reuse ontologies and vocabularies already present in the literature, such as:
+In order to avoid reinventing the wheel,  the reuse of ontologies and vocabularies already present in the literature is encouraged, such as:
 - [Schema.org](https://schema.org)
 - [SPAR Ontologies](http://www.sparontologies.net)
 - [Linked Open Vocabularies (LOV)](https://lov.linkeddata.es/dataset/lov/)
