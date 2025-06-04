@@ -10,7 +10,7 @@ nav_exclude: true
 
 This extension template extends the [SKG-IF Ontology](https://w3id.org/skg-if/ontology/) in two ways:
 - It introduces a *new entity Comment*, which captures a textual comment possibly relevant to a research product;
-- It introduces a *new property* for [Research products](../interoperability-framework/docs/research-product) in order to point to the relative Comment(s).
+- It introduces a *new property* for [Research products](../../interoperability-framework/docs/research-product) in order to point to the relative Comment(s).
 
 ## Expected outcomes
 In this modelling phase, two outcomes are expected
