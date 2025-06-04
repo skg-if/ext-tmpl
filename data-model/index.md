@@ -8,7 +8,7 @@ nav_exclude: true
 
 # Extended data model
 
-This extension template extends the core specifications of SKG-IF in two ways:
+This extension template extends the [SKG-IF Ontology](https://w3id.org/skg-if/ontology/) in two ways:
 - It introduces a *new entity Comment*, which captures a textual comment possibly relevant to a research product;
 - It introduces a *new property* for research products in order to point to the relative comment(s).
 
@@ -19,7 +19,7 @@ In this modelling phase, two outcomes are expected
 
 These files need to be placed as indicated [here](../structure).
 
-## Methodology
+## Methodological considerations
 A good Relation Database always start with requirements analysis and ER diagrams, rather than getting hands dirty with table schemas in the DBMS of reference.
 
 Similarly, here we start with the **development of a formal ontology** that is plugged on top of the one defined by the core SKG-IF data model. As a refresher, or to getting started with ontology development, a good reading list could be the following:
