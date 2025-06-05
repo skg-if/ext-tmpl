@@ -64,8 +64,7 @@ frapo:hasFundingAgency -[0..N]-> frapo:FundingAgency
 ```
 The cardinality can be specified as:
 - A single number (e.g., `[1]`) for exact cardinality
-- A range with minimum and maximum (e.g., `[0..1]`)
-- Using N for unlimited maximum cardinality (e.g., `[1..N]`)
+- A range with minimum and maximum (e.g., `[0..1]`). Use N for unlimited maximum cardinality (e.g., `[1..N]`)
 
 ### Producing the documentation
 In order to produce the `.html` documentation of the developed ontology, no specific tool or format is required. 
