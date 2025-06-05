@@ -52,9 +52,9 @@ A few **simple, yet optional, recommendations** are provided for guide the devel
 - When developing SKG-O, this extension and RA-SKG, the reuse of properties defined in external ontologies has been done as a "light import", i.e., without redefining domain and range (co-domain). The actual domain and range is defined at the annotation level and will be enforced at [SHACL](./shacl) level.
 - To improve readability, use labels in the ontology description for entities and properties "surfacing" to the actual [extended Interoperability Framework](../extended-interoperability-framework/), i.e., as terms in the [JSON-LD context](../context/). Here below, a triple for a label used for this extension is reported.
 
-```
-<http://schema.org/comment> rdfs:label "schema:comment (SKG-IF labels: tmpl_comments)" .
-```
+    ```
+    <http://schema.org/comment> rdfs:label "schema:comment (SKG-IF labels: tmpl_comments)" .
+    ```
 
 -  SKG-IF provides a [SHACL extractor](https://github.com/skg-if/shacl-extractor) that simplify and streamlines the creation of the required [SHACL file](./shacl) from the ontology description produced in this phase. To this end, the following template is advised in order to parse automatically the annotations.
 
