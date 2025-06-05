@@ -21,10 +21,9 @@ In this modelling phase, two outcomes are expected
 - A **OWL/RDF ontology** in the format of choice, e.g., `.ttl`, `.nt`, `.xml`, `.json` (potentially all of them, provided they are aligned);
 - An `.html` **documentation page** of the developed ontology.
 
-These files need to be placed as indicated [here](../structure). In this way, everything will be automatically wired-up in order to deliver behind W3IDs all the assets developed within this extension . 
-For example:
-- This extension ontology, [https://w3id.org/skg-if/extension/tmpl/ontology.ttl](https://w3id.org/skg-if/extension/tmpl/ontology.ttl)
-- This extension documentation, [https://w3id.org/skg-if/extension/tmpl/ontology](https://w3id.org/skg-if/extension/tmpl/ontology)
+These files need to be placed as indicated [here](../structure). In this way, everything will be automatically wired-up in order to deliver behind w3id.org and content negotiation all the assets developed within this extension.
+For example: this extension's ontology can be found at  [https://w3id.org/skg-if/extension/tmpl/ontology](https://w3id.org/skg-if/extension/tmpl/ontology).
+
 
 ## Methodological considerations
 A good Relation Database always start with requirements analysis and ER diagrams, rather than getting hands dirty with table schemas in the DBMS of reference.
@@ -44,13 +43,16 @@ In order to avoid reinventing the wheel,  the reuse of ontologies and vocabulari
 - [Linked Open Vocabularies (LOV)](https://lov.linkeddata.es/dataset/lov/)
 
 ### Developing the ontology
-For sizeable and reasonably small ontologies, editing the required files (e.g., `.ttl`) is a viable way to proceed, while for more complex models an ontology editor could come handy. 
+For sizeable and reasonably small ontologies, editing the required  OWL files (e.g., `.ttl`) is a viable way to proceed, while for more complex models an ontology visual editor could come handy. 
 In this regards, [**Protégé**](https://protege.stanford.edu) is suggested for its live and broad community of adopters, and because it is an open source, free software.
 
 Recommendations **(TODO expand)**:
 - "light import" of external properties without redefining domain and range (co-domain);
--  usage of annotations to be parsed automatically for SHACL definition (see [SHACL development phase](./shacl)).
-
+- use labels in the ontology description for entities and properties "surfacing" to the actual [extended Interoperability Framework](../extended-interoperability-framework/) and [JSON-LD context](../context/). For example, `(SKG-IF labels: tmpl_comments)`.
+-  SKG-IF provides a [SHACL extractor](https://github.com/skg-if/shacl-extractor) that simplify and streamlines the creation of the required SHACL file (see [SHACL development phase](./shacl) from the ontology description produced in this phase. To this end, the usage of annotations is advised in order to enable the tool ).
+```
+propertyName -[cardinality]-> targetType
+```
 ### Producing the documentation
 In order to produce the `.html` documentation of the developed ontology, no specific tool or format is required. 
 In principle, the documentation can adhere to any format of choice and be developed with the preferred method.
