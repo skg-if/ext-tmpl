@@ -42,6 +42,7 @@ In order to avoid reinventing the wheel, the **reuse of ontologies and vocabular
 - [Schema.org](https://schema.org)
 - [SPAR Ontologies](http://www.sparontologies.net)
 - [Linked Open Vocabularies (LOV)](https://lov.linkeddata.es/dataset/lov/)
+- [DAML Ontology Library](https://www.daml.org/ontologies/)
 
 ### Developing the ontology
 For sizeable and reasonably small ontologies, editing the required OWL files (e.g., `.ttl`) is a viable way to proceed, while for more complex models an ontology visual editor could come handy. 
