@@ -2,7 +2,7 @@
 title: Examples
 parent: Extension template
 layout: default
-nav_order: 4
+nav_order: 6
 has_toc: false
 # nav_exclude: true
 ---

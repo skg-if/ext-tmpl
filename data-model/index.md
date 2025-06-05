@@ -2,7 +2,7 @@
 title: Data model
 parent: Extension template
 layout: default
-nav_order: 2
+nav_order: 3
 # nav_exclude: false
 ---
 
