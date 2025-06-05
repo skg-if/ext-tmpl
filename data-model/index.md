@@ -9,7 +9,7 @@ nav_exclude: true
 # Extended data model
 
 {: .important }
-To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining new properties and relations for core entities. For this extension, the acronym is `tmpl`.
+To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining new properties and relations for core entities. **For this extension, the acronym is `tmpl`.**
 
 This extension template extends the [SKG-IF Ontology](https://w3id.org/skg-if/ontology/) in two ways:
 - It introduces a *new entity Comment*, which captures a textual comment possibly relevant to a research product;
@@ -22,6 +22,7 @@ In this modelling phase, two outcomes are expected
 - An `.html` **documentation page** of the developed ontology.
 
 These files need to be placed as indicated [here](../structure). In this way, everything will be automatically wired-up in order to deliver behind w3id.org and content negotiation all the assets developed within this extension.
+
 For example: this extension's ontology can be found at  [https://w3id.org/skg-if/extension/tmpl/ontology](https://w3id.org/skg-if/extension/tmpl/ontology).
 
 
@@ -37,7 +38,7 @@ More in-depth, advanced methodologies are available here:
 - [Peroni, S. (2015). *SAMOD: an agile methodology for the development of ontologies*. In Formal Ontology in Information Systems (FOIS) (pp. 37-50). IOS Press.](https://essepuntato.it/samod/)
 - [Gómez-Pérez, A., Fernández-López, M., & Corcho, O. (2004). *Ontological Engineering: With Examples from the Areas of Knowledge Management, E-commerce and the Semantic Web*. Springer.](https://link.springer.com/book/10.1007/b97353)
 
-In order to avoid reinventing the wheel,  the reuse of ontologies and vocabularies already present in the literature is encouraged, such as:
+In order to avoid reinventing the wheel, the **reuse of ontologies and vocabularies** already present in the literature is encouraged, such as:
 - [Schema.org](https://schema.org)
 - [SPAR Ontologies](http://www.sparontologies.net)
 - [Linked Open Vocabularies (LOV)](https://lov.linkeddata.es/dataset/lov/)
@@ -46,11 +47,11 @@ In order to avoid reinventing the wheel,  the reuse of ontologies and vocabulari
 For sizeable and reasonably small ontologies, editing the required OWL files (e.g., `.ttl`) is a viable way to proceed, while for more complex models an ontology visual editor could come handy. 
 In this regards, [**Protégé**](https://protege.stanford.edu) is suggested for its live and broad community of adopters, and because it is an open source, free software.
 
-A few simple, yet optional, recommendations are provided for guide the development process:
-- When developing SKG-O, this extension and RA-SKG, the reuse of properties defined in external ontologies has been done as a "light import", i,.e., without redefining domain and range (co-domain). The actual domain and range is defined at the annotation level and will be enforced at [SHACL](./shacl) level.
-- To improve readability, use labels in the ontology description for entities and properties "surfacing" to the actual [extended Interoperability Framework](../extended-interoperability-framework/) and as terms in the [JSON-LD context](../context/). Here below, a label used for this extension is reported.
+A few **simple, yet optional, recommendations** are provided for guide the development process:
+- When developing SKG-O, this extension and RA-SKG, the reuse of properties defined in external ontologies has been done as a "light import", i.e., without redefining domain and range (co-domain). The actual domain and range is defined at the annotation level and will be enforced at [SHACL](./shacl) level.
+- To improve readability, use labels in the ontology description for entities and properties "surfacing" to the actual [extended Interoperability Framework](../extended-interoperability-framework/), i.e., as terms in the [JSON-LD context](../context/). Here below, a triple for a label used for this extension is reported.
 ```
-rdfs:label "schema:comment (SKG-IF labels: tmpl_comments)"
+<http://schema.org/comment> rdfs:label "schema:comment (SKG-IF labels: tmpl_comments)" .
 ```
 -  SKG-IF provides a [SHACL extractor](https://github.com/skg-if/shacl-extractor) that simplify and streamlines the creation of the required [SHACL file](./shacl) from the ontology description produced in this phase. To this end, the following template is advised in order to parse automatically the annotations.
 ```
