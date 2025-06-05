@@ -58,21 +58,21 @@ A few **simple, yet optional, recommendations** are provided for guide the devel
 
 -  SKG-IF provides a [SHACL extractor](https://github.com/skg-if/shacl-extractor) that simplify and streamlines the creation of the required [SHACL file](./shacl) from the ontology description produced in this phase. To this end, the following template is advised in order to parse automatically the annotations.
 
-```
-propertyName -[cardinality]-> targetType
-```
+    ```
+    propertyName -[cardinality]-> targetType
+    ```
 
-For example:
+    For example:
 
-```
-dcterms:title -[1]-> rdfs:Literal
-frapo:hasGrantNumber -[0..1]-> xsd:string
-frapo:hasFundingAgency -[0..N]-> frapo:FundingAgency
-```
+    ```
+    dcterms:title -[1]-> rdfs:Literal
+    frapo:hasGrantNumber -[0..1]-> xsd:string
+    frapo:hasFundingAgency -[0..N]-> frapo:FundingAgency
+    ```
 
-The cardinality can be specified as:
-- A single number (e.g., `[1]`) for exact cardinality
-- A range with minimum and maximum (e.g., `[0..1]`). Use N for unlimited maximum cardinality (e.g., `[1..N]`)
+    The cardinality can be specified as:
+    - A single number (e.g., `[1]`) for exact cardinality
+    - A range with minimum and maximum (e.g., `[0..1]`). Use N for unlimited maximum cardinality (e.g., `[1..N]`)
 
 ### Producing the documentation
 In order to produce the `.html` documentation of the developed ontology, no specific tool or format is required. 
@@ -86,4 +86,4 @@ docker run -ti --rm \
   -v `pwd`/target/generated-doc:/usr/local/widoco/out:Z \
   dgarijo/widoco -ontFile in/tmpl.ttl -outFolder out -rewriteAll -noPlaceHolderText
 ```
-and the files produced under `generated-doc` have been placed in the extension repository as indicated [here](../structure).
+The files produced under `generated-doc` have been placed in the extension repository as indicated [here](../structure).
