@@ -56,7 +56,7 @@ A few **simple, yet optional, recommendations** are provided for guide the devel
     <http://schema.org/comment> rdfs:label "schema:comment (SKG-IF labels: tmpl_comments)" .
     ```
 
--  SKG-IF provides a [SHACL extractor](https://github.com/skg-if/shacl-extractor) that simplify and streamlines the creation of the required [SHACL file](./shacl) from the ontology description produced in this phase. To this end, the following template is advised in order to parse automatically the annotations.
+-  SKG-IF provides a [SHACL extractor](https://github.com/skg-if/shacl-extractor) that simplifies and streamlines the creation from scratch of the required [SHACL file](./shacl) starting from the ontology description produced in this phase. To this end, the following template is advised in order to parse automatically the descriptions.
 
     ```
     propertyName -[cardinality]-> targetType
