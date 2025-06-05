@@ -1,5 +1,5 @@
 ---
-title: Entity
+title: Comment
 parent: Interoperability framework
 ancestor: Extension template
 layout: default
