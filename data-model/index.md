@@ -43,19 +43,40 @@ In order to avoid reinventing the wheel,  the reuse of ontologies and vocabulari
 - [Linked Open Vocabularies (LOV)](https://lov.linkeddata.es/dataset/lov/)
 
 ### Developing the ontology
-For sizeable and reasonably small ontologies, editing the required  OWL files (e.g., `.ttl`) is a viable way to proceed, while for more complex models an ontology visual editor could come handy. 
+For sizeable and reasonably small ontologies, editing the required OWL files (e.g., `.ttl`) is a viable way to proceed, while for more complex models an ontology visual editor could come handy. 
 In this regards, [**Protégé**](https://protege.stanford.edu) is suggested for its live and broad community of adopters, and because it is an open source, free software.
 
-Recommendations **(TODO expand)**:
-- "light import" of external properties without redefining domain and range (co-domain);
-- use labels in the ontology description for entities and properties "surfacing" to the actual [extended Interoperability Framework](../extended-interoperability-framework/) and [JSON-LD context](../context/). For example, `(SKG-IF labels: tmpl_comments)`.
--  SKG-IF provides a [SHACL extractor](https://github.com/skg-if/shacl-extractor) that simplify and streamlines the creation of the required SHACL file (see [SHACL development phase](./shacl) from the ontology description produced in this phase. To this end, the usage of annotations is advised in order to enable the tool ).
+A few simple, yet optional, recommendations are provided for guide the development process:
+- When developing SKG-O, this extension and RA-SKG, the reuse of properties defined in external ontologies has been done as a "light import", i,.e., without redefining domain and range (co-domain). The actual domain and range is defined at the annotation level and will be enforced at [SHACL](./shacl) level.
+- To improve readability, use labels in the ontology description for entities and properties "surfacing" to the actual [extended Interoperability Framework](../extended-interoperability-framework/) and as terms in the [JSON-LD context](../context/). Here below, a label used for this extension is reported.
+```
+rdfs:label "schema:comment (SKG-IF labels: tmpl_comments)"
+```
+-  SKG-IF provides a [SHACL extractor](https://github.com/skg-if/shacl-extractor) that simplify and streamlines the creation of the required [SHACL file](./shacl) from the ontology description produced in this phase. To this end, the following template is advised in order to parse automatically the annotations.
 ```
 propertyName -[cardinality]-> targetType
 ```
+For example:
+```
+dcterms:title -[1]-> rdfs:Literal
+frapo:hasGrantNumber -[0..1]-> xsd:string
+frapo:hasFundingAgency -[0..N]-> frapo:FundingAgency
+```
+The cardinality can be specified as:
+- A single number (e.g., `[1]`) for exact cardinality
+- A range with minimum and maximum (e.g., `[0..1]`)
+- Using N for unlimited maximum cardinality (e.g., `[1..N]`)
+
 ### Producing the documentation
 In order to produce the `.html` documentation of the developed ontology, no specific tool or format is required. 
 In principle, the documentation can adhere to any format of choice and be developed with the preferred method.
 
-However, we can suggest that can potentially streamline the workflow:
-- [**WIDOCO**](https://github.com/dgarijo/Widoco)
+However, we suggest the use of [**WIDOCO**](https://github.com/dgarijo/Widoco), which can potentially streamline the workflow.
+For this extension, WIDOCO has been run from the dockerised version with
+```
+docker run -ti --rm \
+  -v `pwd`/test:/usr/local/widoco/in:Z \
+  -v `pwd`/target/generated-doc:/usr/local/widoco/out:Z \
+  dgarijo/widoco -ontFile in/tmpl.ttl -outFolder out -rewriteAll -noPlaceHolderText
+```
+and the files produced under `generated-doc` have been placed in the extension repository as indicated [here](../structure).
