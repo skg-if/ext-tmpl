@@ -19,4 +19,4 @@ For example, the current (i.e., last) version of the JSON-LD context is availabl
 
 
 ## Methodological considerations
-This phase is manual and maps the JSON terms that will "surface" in the [extended Interoperability Framework](./extended-interoperability-framework) to the ontology [previously developed](./data-model).
+This phase is manual and maps the JSON terms that will "surface" in the [extended Interoperability Framework](../extended-interoperability-framework) to the ontology [previously developed](../data-model).

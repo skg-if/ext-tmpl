@@ -8,9 +8,13 @@ nav_exclude: true
 
 # API extensions
 
-In this page, please document how your extension affects (if any) the optional HTTP parameters of the [API resolvers]({% link api/index.md %}) described in the core specification of the SKG-IF.
-
-Additionally, you are free to specify additional methods with customised behaviour that your extension requires to provide.
-
 {: .important }
-To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining api methods, or defining HTTP parameters for core API resolvers.
+To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining new properties and relations for core entities. For this extension, the acronym is `tmpl`.
+
+
+## Expected output
+In this page, please document how your extension affects (if any) the optional [core Open API specifications](../api).
+
+
+### Methodological considerations
+TODO
