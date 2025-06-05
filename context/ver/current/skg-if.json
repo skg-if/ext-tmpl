@@ -4,6 +4,7 @@
         "@protected": true,
         "schema": "http://schema.org/",
 
+        "tmpl_comment": "schema:Comment",
         "tmpl_comments": {
             "@id": "schema:comment",
             "@type": "@vocab"

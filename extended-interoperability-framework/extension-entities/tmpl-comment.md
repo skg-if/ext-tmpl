@@ -4,7 +4,7 @@ parent: Interoperability framework
 ancestor: Extension template
 layout: default
 nav_order: 3
-nav_exclude: true
+# nav_exclude: true
 ---
 
 # Comment
