@@ -13,8 +13,7 @@ While most of the structure is in general non-prescriptive, some parts (e.g., ve
 Please review the following to learn how to structure information in your repository.
 
 {: .highlight }
-Provided that your extension acronym of choice is `abc`, your repository will be named `ext-abc` to conveniently locate extension repositories under the [SKG-IF organisation](https://github.com/orgs/skg-if/repositories) on GitHub. For example, the repository [`ext-tmpl`](https://github.com/skg-if/ext-tmpl) is the repository name of this template, whose acronym is `tmpl`.
-
+Provided that your extension acronym of choice is `tmpl`, the extension repository will be named [`ext-tmpl`](https://github.com/skg-if/ext-tmpl) to conveniently locate extension repositories under the [SKG-IF organisation](https://github.com/orgs/skg-if/repositories) on GitHub. 
 
 ## The `data-model` folder
 This folder contains material necessary to implement the data model for SKG-IF extension. 
