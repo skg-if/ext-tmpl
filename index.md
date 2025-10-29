@@ -18,7 +18,7 @@ The documentation must be written in [**Markdown**](https://www.markdownguide.or
 ## Documentation checklist
 In order to document the specification introduced by your extension, please use the suggested [folder structure](./structure).
 In particular, the document you have to produce has to cover these fundamental aspects:
-- Production of the extension [data model](/ext-tmpl/data-model/) and formal implementation in OWL;
+- Production of the extension [data model](./data-model/) and formal implementation in OWL;
 - Production of the [SHACL](/ext-tmpl/data-model/shacl/) file;
 - Production of the [JSON-LD context](/ext-tmpl/context/) for the extension;
 - Description of the [extended Interoperability Framework](/ext-tmpl/extended-interoperability-framework/) (properties and relations of core and new entities);
