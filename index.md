@@ -19,8 +19,8 @@ The documentation must be written in [**Markdown**](https://www.markdownguide.or
 In order to document the specification introduced by your extension, please use the suggested [folder structure](./structure).
 In particular, the document you have to produce has to cover these fundamental aspects:
 - Production of the extension [data model](./data-model/) and formal implementation in OWL;
-- Production of the [SHACL](/ext-tmpl/data-model/shacl/) file;
-- Production of the [JSON-LD context](/ext-tmpl/context/) for the extension;
-- Description of the [extended Interoperability Framework](/ext-tmpl/extended-interoperability-framework/) (properties and relations of core and new entities);
-- Provide [APIs extensions](/ext-tmpl/api/) of the core OpenAPI specs; i.e., customisations of core API resolvers (if any) and/or introduction of custom API methods (if any);
-- Production of [JSON-LD examples](/ext-tmpl/examples/).
+- Production of the [SHACL](./data-model/shacl/) file;
+- Production of the [JSON-LD context](./context/) for the extension;
+- Description of the [extended Interoperability Framework](./extended-interoperability-framework/) (properties and relations of core and new entities);
+- Provide [APIs extensions](./api/) of the core OpenAPI specs; i.e., customisations of core API resolvers (if any) and/or introduction of custom API methods (if any);
+- Production of [JSON-LD examples](./examples/).
