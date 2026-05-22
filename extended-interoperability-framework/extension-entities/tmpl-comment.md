@@ -25,7 +25,7 @@ Like any other entity in the SKG-IF, [Comment] has to have some basic mandatory 
 **Suggestion:** Use a URL as a string to make this entity dereferenceable on the Web. For additional information, see the [section 'Local identifiers of entities' of the Interoperability Framework](/interoperability-framework/#local-identifiers-of-entities).
 
 ```json
-    "local_identifier": "https://..."
+"local_identifier": "https://..."
 ```
 
 ### `identifiers`
@@ -38,26 +38,26 @@ Each identifier is structured as follows:
 **Note:** the current version of SKG-IF includes the following types of identifiers (to be specified as strings in the field “scheme”): `orcid`, `handle`, `url`, ...
 
 ```json
-    "identifiers": [
-        {
-            "scheme": "...",
-            "value": "..."
-        }           
-    ]
+"identifiers": [
+    {
+        "scheme": "...",
+        "value": "..."
+    }           
+]
 ```
 
 ### `entity_type`
 *String* (mandatory): Field stating what kind of entity is being serialised. Needed for parsing purposes; fixed to `tmpl_comment`. Please notice that you need to prepend the assigned `tmpl_` prefix to your type in order to prevent possible clashes with other extensions.
 
 ```json
-    "entity_type": "tmpl_comment"
+"entity_type": "tmpl_comment"
 ```
 
 ### `tmpl_content`
 *String* (mandatory): attribute description.
 
 ```json
-    "tmpl_content": "In this paper, the authors contribute to the SoA with A, B, and C."
+"tmpl_content": "In this paper, the authors contribute to the SoA with A, B, and C."
 ```
 
 ----
