@@ -11,42 +11,53 @@ actions:
     update:
       '/comments':
           get:
-          tags:
-            - Comment
-          summary: Get list of Comments. 
-          operationId: getComment
-          description: |
-              Get a list of `Comments`. See definition in SKG-IF [Extension template] (https://skg-if.github.io/ext-tmpl/extended-interoperability-framework/extension-entities/tmpl-comment.html) (entity_type: tmpl_comment ).
-          parameters:
-          responses:
-            '200':
-              description: Success
-              content:
-                application/json:
-                  schema:
-                    properties:
-                      "@context":
-                        type: array
-                        description: JSON-LD context # not displayed in Stoplight elements
-                        minItems: 4 # http://../skg-if.json, http://../skg-if-api.json, http://../skg-if-ext-serv.json and @base
-                        uniqueItems: true
-                        items:
-                          anyOf:
-                            - $ref: '#/components/schemas/JsonLdCtxDataModel'
-                            - $ref: '#/components/schemas/JsonLdCtxSearch'
-                            - $ref: '#/components/schemas/JsonLdCtxBaseOrMore'
-                            - $ref: '#/components/schemas/JsonLdCtxExt-srv'
-                        examples:
-                          - ["https://w3id.org/skg-if/context/1.1.0/skg-if.json", "https://w3id.org/skg-if/context/1.0.0/skg-if-api.json", {"@base": "https://w3id.org/skg-if/sandbox/my-skg-acronym/"}, "https://w3id.org/skg-if/extension/tmpl/context/skg-if.json"]
-                          #add the 4th JsonLdCtx
-                      meta:
-                        type: object
-                        $ref: '#/components/schemas/Meta'
-                      "@graph":
+            tags:
+              - Comment
+            summary: Get list of Comments. 
+            operationId: getComment
+            description: |
+                Get a list of `Comments`. See definition in SKG-IF [Extension template] (https://skg-if.github.io/ext-tmpl/extended-interoperability-framework/extension-entities/tmpl-comment.html) (entity_type: tmpl_comment ).
+            parameters:
+              - name: filter
+                in: query
+                description: |
+                      Search filter. Format : Coma separated filter_name:filter_value elements ( filter_name_1:filter_value_1,filter_name_2:filter_value_2,filter_name_3:filter_value_3... ). Server side operator used is _AND_.
+                schema:
+                  type: string
+                  pattern: '^(,?.+:.+)*$'
+                examples : 
+                  title_ex :
+                    value: cf.search:excellent
+                    summary : search comment which contains 'oceexcellentan' 
+            responses:
+              '200':
+                description: Success
+                content:
+                  application/json:
+                    schema:
+                      properties:
+                        "@context":
                           type: array
-                          items:     
-                            $ref: '#/components/schemas/Comment'
-                    required: [ "@context", "meta", "@graph" ]    
+                          description: JSON-LD context # not displayed in Stoplight elements
+                          minItems: 4 # http://../skg-if.json, http://../skg-if-api.json, http://../skg-if-ext-serv.json and @base
+                          uniqueItems: true
+                          items:
+                            anyOf:
+                              - $ref: '#/components/schemas/JsonLdCtxDataModel'
+                              - $ref: '#/components/schemas/JsonLdCtxSearch'
+                              - $ref: '#/components/schemas/JsonLdCtxBaseOrMore'
+                              - $ref: '#/components/schemas/JsonLdCtxExt-srv'
+                          examples:
+                            - ["https://w3id.org/skg-if/context/1.1.0/skg-if.json", "https://w3id.org/skg-if/context/1.0.0/skg-if-api.json", {"@base": "https://w3id.org/skg-if/sandbox/my-skg-acronym/"}, "https://w3id.org/skg-if/extension/tmpl/context/skg-if.json"]
+                            #add the 4th JsonLdCtx
+                        meta:
+                          type: object
+                          $ref: '#/components/schemas/Meta'
+                        "@graph":
+                            type: array
+                            items:     
+                              $ref: '#/components/schemas/Comment'
+                      required: [ "@context", "meta", "@graph" ]    
   - target: $.paths
     update:
       '/comments/{short_local_identifier}':
