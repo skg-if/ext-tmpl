@@ -60,7 +60,7 @@ actions:
                       required: [ "@context", "meta", "@graph" ]    
   - target: $.paths
     update:
-      '/comments/{short_local_identifier}':
+      '/comments/{local_identifier}':
         get:
           tags:
             - Comment
@@ -69,7 +69,7 @@ actions:
               Get a single `comment`. See definition in SKG-IF extension [Extension template](https://skg-if.github.io/ext-tmpl/extended-interoperability-framework/extension-entities/tmpl-comment.html) ( entity_type:tmpl_comment ).
           operationId: getCommentById
           parameters:
-              - $ref : '#/components/parameters/shortLocalIdPathParam'
+              - $ref : '#/components/parameters/localIdPathParam'
           responses:
             '200':
               description: Success

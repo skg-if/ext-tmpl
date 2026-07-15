@@ -28,7 +28,7 @@ The extension can add **new entities with their own properties** and/or add **ne
 
 ### adding a new entity
 
-If an extension adds a new entity to the model this entity needs a tag and 2 new paths in the Open API specification: 1) to retrieve an individual instance, e.g, `/comments/{short_local_identifier}` and 2) to retrieve all (filtered) instances, e.g., `/comments`. The following shows a large part of these actions for this template:
+If an extension adds a new entity to the model this entity needs a tag and 2 new paths in the Open API specification: 1) to retrieve an individual instance, e.g, `/comments/{local_identifier}` and 2) to retrieve all (filtered) instances, e.g., `/comments`. The following shows a large part of these actions for this template:
 
 **NOTE**: when working on your own overlay check the latest version of the [(core) Open API specification](/api) esp. for the generic parts of the responses, i.e., the _context_ and the _meta_!
 
@@ -78,7 +78,7 @@ actions:
                       required: [ "@context", "meta", "@graph" ]    
  - target: $.paths
     update:
-      '/comments/{short_local_identifier}':
+      '/comments/{local_identifier}':
         get:
           tags:
             - Comment
