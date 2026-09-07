@@ -1,0 +1,132 @@
+overlay: 1.0.0
+info:
+  title: The template extension
+  version: 1.0.0
+actions:
+  - target: $.tags
+    update:
+      - name: Comment
+        description: comment operations (skg-if tmpl extension)
+  - target: $.paths
+    update:
+      '/comments':
+          get:
+            tags:
+              - Comment
+            summary: Get list of Comments. 
+            operationId: getComment
+            description: |
+                Get a list of `Comments`. See definition in SKG-IF [Extension template] (https://skg-if.github.io/ext-tmpl/extended-interoperability-framework/extension-entities/tmpl-comment.html) (entity_type: tmpl_comment ).
+            parameters:
+              - name: filter
+                in: query
+                description: |
+                      Search filter. Format : Coma separated filter_name:filter_value elements ( filter_name_1:filter_value_1,filter_name_2:filter_value_2,filter_name_3:filter_value_3... ). Server side operator used is _AND_.
+                schema:
+                  type: string
+                  pattern: '^(,?.+:.+)*$'
+                examples : 
+                  title_ex :
+                    value: cf.search:excellent
+                    summary : search comment which contains 'oceexcellentan' 
+            responses:
+              '200':
+                description: Success
+                content:
+                  application/json:
+                    schema:
+                      properties:
+                        "@context":
+                          type: array
+                          description: JSON-LD context # not displayed in Stoplight elements
+                          minItems: 4 # http://../skg-if.json, http://../skg-if-api.json, http://../skg-if-ext-serv.json and @base
+                          uniqueItems: true
+                          items:
+                            anyOf:
+                              - $ref: '#/components/schemas/JsonLdCtxDataModel'
+                              - $ref: '#/components/schemas/JsonLdCtxSearch'
+                              - $ref: '#/components/schemas/JsonLdCtxBaseOrMore'
+                              - $ref: '#/components/schemas/JsonLdCtxExt-srv'
+                          examples:
+                            - ["https://w3id.org/skg-if/context/1.1.0/skg-if.json", "https://w3id.org/skg-if/context/1.0.0/skg-if-api.json", {"@base": "https://w3id.org/skg-if/sandbox/my-skg-acronym/"}, "https://w3id.org/skg-if/extension/tmpl/context/skg-if.json"]
+                            #add the 4th JsonLdCtx
+                        meta:
+                          type: object
+                          $ref: '#/components/schemas/Meta'
+                        "@graph":
+                            type: array
+                            items:     
+                              $ref: '#/components/schemas/Comment'
+                      required: [ "@context", "meta", "@graph" ]    
+  - target: $.paths
+    update:
+      '/comments/{local_identifier}':
+        get:
+          tags:
+            - Comment
+          summary: Get comment by id
+          description: |
+              Get a single `comment`. See definition in SKG-IF extension [Extension template](https://skg-if.github.io/ext-tmpl/extended-interoperability-framework/extension-entities/tmpl-comment.html) ( entity_type:tmpl_comment ).
+          operationId: getCommentById
+          parameters:
+              - $ref : '#/components/parameters/localIdPathParam'
+          responses:
+            '200':
+              description: Success
+              content:
+                # not 'application/json-ld' to be compatible with StopLight PRISM tool
+                application/json: 
+                  schema:
+                    required: ["@context", "@graph"]
+                    properties:
+                      "@context":
+                         type: array
+                         description: JSON-LD context # not displayed in Stoplight elements
+                         minItems: 4 # http://../skg-if.json, http://../skg-if-api.json, http://../skg-if-ext-serv.json and @base
+                         uniqueItems: true
+                         items:
+                            anyOf:
+                              - $ref: '#/components/schemas/JsonLdCtxDataModel'
+                              - $ref: '#/components/schemas/JsonLdCtxSearch'
+                              - $ref: '#/components/schemas/JsonLdCtxBaseOrMore'
+                              - $ref: '#/components/schemas/JsonLdCtxExt-srv'
+                         examples:
+                           - ["https://w3id.org/skg-if/context/1.1.0/skg-if.json", "https://w3id.org/skg-if/context/1.0.0/skg-if-api.json", {"@base": "https://w3id.org/skg-if/sandbox/my-skg-acronym/"}, "https://w3id.org/skg-if/extension/tmpl/context/skg-if.json"]
+                      "@graph":
+                        type: array
+                        minItems: 1
+                        maxItems: 1
+                        items:
+                          $ref: "#/components/schemas/Comment"
+            '404':
+              description: |
+                Error if entity does not exist
+  - target: $.components.schemas
+    update:
+      Comment:
+        type: object
+        title: 'Comment'
+        description: 'The Commment is an example extension'
+        allOf:
+        - $ref: "#/components/schemas/Entity"
+        - type: object
+          required: [
+            "local_identifier","entity_type","product_type"
+          ]
+          properties:
+            entity_type:
+              default: "tmpl_comment"
+              type: string
+              x-faker:
+                helpers.arrayElement: [["tmpl_comment"]]
+            tmpl_content:
+              type: string
+              x-faker:
+  - target: $.components.schemas.Product.allOf[1].properties
+    update:
+      tmpl_comments:
+        description: "List of Comments"
+        type: array
+        items:
+          type: string
+          description: 'Comment identifiers'
